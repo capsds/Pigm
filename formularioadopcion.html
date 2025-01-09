@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Servicio de alerta de perdida de mascotas y servicio de adopcion" />
+    <meta name="author" content="C.A.P.S Desarrollo de Software" />
+    <title>Plataforma Integral para la Gestión de Mascotas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="ico/icon.png" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">P.I.G.M.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="alertaperdida.html">Alerta de Perdida</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mascotasperdidas.html">Mascotas Perdidas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formularioadopcion.html">Formulario de
+                                Adopción</a></li>
+                        <li class="nav-item"><a class="nav-link" href="adopcion.html">Dale un Hogar a Una Mascotas</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Projects Section-->
+        <section class="py-5">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Formulario de
+                            Adopción</span>
+                    </h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6 p-4 rounded text-center bg-primary text-white">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
+                                <input type="text" class="form-control" id="nombreMascota" placeholder="Ej. Luna"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tipoMascota" class="form-label">Tipo de Mascota</label>
+                                <select class="form-select" id="tipoMascota" required>
+                                    <option selected disabled>Selecciona una opción</option>
+                                    <option value="perro">Perro</option>
+                                    <option value="gato">Gato</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="raza" class="form-label">Raza</label>
+                                <input type="text" class="form-control" id="raza"
+                                    placeholder="Ej. Labrador, Persa, Mixto">
+                            </div>
+                            <div class="mb-3">
+                                <label for="color" class="form-label">Color Principal</label>
+                                <input type="text" class="form-control" id="color" placeholder="Ej. Marrón, Blanco">
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad" class="form-label">Edad Aproximada</label>
+                                <input type="text" class="form-control" id="edad" placeholder="Ej. 1 año, Cachorro">
+                            </div>
+                            <div class="mb-3">
+                                <label for="estadoSalud" class="form-label">Estado de Salud</label>
+                                <textarea class="form-control" id="estadoSalud" rows="3"
+                                    placeholder="Ej. Vacunado, Esterilizado, Sin problemas de salud"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="caracteristicas" class="form-label">Personalidad o Comportamiento</label>
+                                <textarea class="form-control" id="caracteristicas" rows="3"
+                                    placeholder="Ej. Juguetón, Dócil, Bueno con niños" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="razonAdopcion" class="form-label">Razón para dar en adopción</label>
+                                <textarea class="form-control" id="razonAdopcion" rows="3"
+                                    placeholder="Ej. Cambio de residencia, Situación económica" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fotoMascota" class="form-label">Foto de la Mascota</label>
+                                <input type="file" class="form-control" id="fotoMascota" accept="image/*" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nombreContacto" class="form-label">Nombre del Contacto</label>
+                                <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono de Contacto</label>
+                                <input type="tel" class="form-control" id="telefono" placeholder="Ej. 555-123-4567"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Ej. tuemail@ejemplo.com" required>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg bg-black">Publicar para
+                                    Adopción</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Call to action section-->
+    </main>
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright &copy; C.A.P.S. Desarrollo de Software 2025</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
